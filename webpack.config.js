@@ -82,7 +82,7 @@ module.exports = {
     }),
 
     // Копируем картинки
-    new CopyWebpackPlugin([
+    new CopyWebpackPlugin(
       {
         patterns: [
           {
@@ -91,6 +91,6 @@ module.exports = {
           },
         ]
       },
-    ])
+    )
   ],
 };
