@@ -1,0 +1,9 @@
+.main{
+  background: $bgBody;
+  width: 100%;
+}
+
+@import "./title";
+@import "./slidemenu";
+@import "./blog";
+@import "./blog-more";

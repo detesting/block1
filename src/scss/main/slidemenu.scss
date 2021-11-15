@@ -1,0 +1,58 @@
+.slidemenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 24px;
+  color: $clrSlidemenu;
+  background: inherit;
+  flex-shrink: 0;
+  margin-left: 24px;
+
+  @media (max-width: 1119px) {
+    overflow-x: scroll;
+    -ms-overflow-style: none; /*Скрывает скролл в Edge и IE*/
+    scrollbar-width: none; /*Скрывает скролл в Firefox*/
+
+    &::-webkit-scrollbar { /*Скрывает скролл в webkit*/
+      width: 0 !important;
+      height: 0;
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 1120px) {
+    flex-wrap: wrap;
+  }
+
+  li .button{
+    font-size: 16px;
+    line-height: 24px;
+    color: $clrSlidemenu;
+    letter-spacing: -0.2px;
+    padding: 8px 16px;
+    background: inherit;
+    flex-shrink: 0;
+
+    &:hover, &:focus{
+      font-size: 16px;
+      color: $clrSlidemenu;
+      border: 2px solid $brSlidebar;
+      border-radius: 6px;
+      letter-spacing: -0.2px;
+      background: $bgWhite;
+      flex-shrink: 0;
+    }
+  }
+
+  &__brand--state--active{
+    font-size: 16px;
+    color: $clrSlidemenu;
+    border: 2px solid $brSlidebar;
+    border-radius: 6px;
+    letter-spacing: -0.2px;
+    background: #FFFFFF !important;
+    flex-shrink: 0;
+  }
+
+}

@@ -1,0 +1,41 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 88px;
+
+  padding-bottom: 24px;
+  padding-top: 24px;
+  background: $bgWhite;
+  border-bottom: 1px solid $brHeader;
+
+  @media (min-width: 1120px){
+    display: none;
+  }
+}
+
+.header__left{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.header__right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+
+@import './burger';
+@import './call';
+@import './chat';
+@import './checkstatus';
+@import './logo';
+@import './profile';
+@import './repair';

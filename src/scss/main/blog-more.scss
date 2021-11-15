@@ -1,0 +1,18 @@
+.blog-more{
+  display: flex;
+  background: $bgBody;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 8px 8px 8px 8px;
+
+  &__text{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $clrText;
+  }
+  &--state--active{
+    display: none;
+  }
+}
