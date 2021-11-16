@@ -1,4 +1,8 @@
 .checkstatus{
   padding-right: 8px;
-  padding-left: 8px;
+  padding-left: 16px;
+
+  @media (min-width: 767px) {
+    padding-left: 24px;
+  }
 }
