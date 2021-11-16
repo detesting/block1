@@ -1,6 +1,8 @@
 .prices-header{
   background: linear-gradient(270deg, $bgWhite 0%, $bgBody 98.61%);
   margin-top: 24px;
+  border-top: 1px solid $border;
+
   @media (min-width: 767px){
     margin-top: 32px;
   }

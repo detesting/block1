@@ -5,6 +5,47 @@
   max-width: 1121px;
   margin: 0 auto;
 
+  &__bottom-text{
+    font-family: 'TT Lakes', serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $clrText;
+
+    max-width: 421px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @media (min-width: 767px) {
+      margin-left: 24px;
+    }
+    @media (min-width: 1119px) {
+      margin-left: 32px;
+    }
+  }
+  &__link{
+    font-family: 'TT Lakes', serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $clrText;
+    font-weight: 600;
+
+    margin: 16px 16px 40px;
+
+    @media (min-width: 767px) {
+      margin-left: 24px;
+      margin-bottom: 47px;
+    }
+    @media (min-width: 1119px) {
+      margin-left: 32px;
+      margin-bottom: 50px;
+    }
+
+    img{
+      padding-left: 10px;
+    }
+  }
 }
 
 @import "prices-header";

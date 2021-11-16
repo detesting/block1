@@ -9,6 +9,7 @@ $clrText: #1B1C21;
 $bgSwiper: #DDDDDD;
 $bgActiveSwiper: #B5B6BC;
 $tableBtn: #FF3E79;
+$border: #D9FFF5;
 
 
 @font-face {
@@ -59,6 +60,7 @@ button:hover, a:hover{
 
 a{
   text-decoration: none;
+  color: $clrText;
 }
 
 li {

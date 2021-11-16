@@ -1,6 +1,6 @@
 .brands-header{
   background: linear-gradient(270deg, $bgWhite 0%, $bgBody 98.61%);
-
+  border-top: 1px solid $border;
   &__text{
     padding: 16px 16px;
     margin-bottom: 24px;
