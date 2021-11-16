@@ -1,0 +1,41 @@
+.brands-main {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 176px;
+  overflow: hidden;
+  min-width: 0;
+  //margin-left: 16px;
+
+  &__brand{
+    background: $bgWhite;
+    border: 1px solid $btnBorderHead;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+    width: 224px;
+    height: 72px;
+    margin: 8px 0 8px 16px;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: 767px) {
+      margin-left: 24px;
+    }
+    @media (min-width: 1119px) {
+      margin-left: 32px;
+    }
+  }
+
+  &__img{
+    object-fit: scale-down;
+  }
+  &__link{
+    padding: 16px;
+  }
+
+  &--show{
+    max-height: 100%;
+    overflow: visible;
+  }
+}

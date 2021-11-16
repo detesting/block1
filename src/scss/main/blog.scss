@@ -36,15 +36,22 @@
     line-height: 20px;
     letter-spacing: -0.2px;
     color: $clrText;
-    padding: 12px 16px 8px 16px;
+    padding: 20px 16px 8px 16px;
 
     align-self: flex-start;
-    max-height: 130px;
+    max-height: 120px;
     overflow: hidden;
 
     @media (max-width: 767px){
       background: transparent;
       max-width: 100%;
+      padding: 20px 16px 8px 16px;
+    }
+    @media (max-width: 1119px) {
+      padding: 20px 16px 8px 24px;
+    }
+    @media (min-width: 1119px) {
+      padding: 20px 16px 8px 32px;
     }
 
     &--state--active{

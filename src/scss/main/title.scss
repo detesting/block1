@@ -9,8 +9,14 @@
 
   &__name{
     border-left: 4px solid $borderItem;
-    padding-left: 20px;
+    padding-left: 16px;
     width: 100%;
+    @media (min-width: 767px) {
+      padding-left: 24px;
+    }
+    @media (min-width: 1119px) {
+      padding-left: 32px;
+    }
   }
   &__icons{
     display: flex;
