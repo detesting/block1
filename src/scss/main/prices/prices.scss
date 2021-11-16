@@ -1,0 +1,12 @@
+.prices {
+  font-family: 'TT Lakes', serif;
+  background: $bgBody;
+  min-width: 0;
+  max-width: 1121px;
+  margin: 0 auto;
+
+}
+
+@import "prices-header";
+@import "prices-main";
+@import "prices-swiper";

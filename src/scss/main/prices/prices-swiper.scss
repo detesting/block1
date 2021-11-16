@@ -1,0 +1,96 @@
+.prices {
+  .swiper-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 767px) {
+      display: none;
+    }
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-slide {
+    background: $bgWhite;
+    border: 1px solid $btnBorderHead;
+    border-radius: 6px;
+
+    min-width: 260px;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__title{
+      font-family: "TT Lakes", serif;
+      font-size: 14px;
+      line-height: 16px;
+
+      color: $clrSlidemenu;
+
+      mix-blend-mode: normal;
+      opacity: 0.72;
+      width: 100%;
+
+      padding: 16px 0 0 16px;
+    }
+    &__text{
+      font-family: "TT Lakes", serif;
+      font-size: 14px;
+      line-height: 18px;
+
+      letter-spacing: 0.2px;
+
+      color: $clrText;
+      padding: 4px 16px 0 16px;
+    }
+    &__button{
+      background-color: $tableBtn;
+      border-radius: 16px;
+
+      display: flex;
+      padding: 4px 8px 4px 12px;
+      font-family: "TT Lakes", serif;
+      font-size: 12px;
+      line-height: 24px;
+
+      text-align: right;
+      letter-spacing: -0.15px;
+      text-transform: uppercase;
+      color: $bgWhite;
+      font-weight: bold;
+
+      margin: 0 16px 16px 0;
+    }
+    &__img{
+
+    }
+  }
+
+  .swiper-pagination {
+    position: relative;
+    top: 15px;
+    margin-bottom: 40px;
+
+    @media (min-width: 767px) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background: $bgSwiper !important;
+    height: 12px !important;
+    width: 12px !important;
+    opacity: 1 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $bgActiveSwiper !important;
+    height: 12px !important;
+    width: 12px !important;
+    opacity: 1 !important;
+  }
+}

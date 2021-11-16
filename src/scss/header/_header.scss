@@ -10,6 +10,8 @@
   background: $bgWhite;
   border-bottom: 1px solid $brHeader;
 
+  width: 100%;
+
   @media (min-width: 1120px){
     display: none;
   }

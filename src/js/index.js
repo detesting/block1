@@ -25,6 +25,18 @@ const swiperServices = new Swiper('.services-container', {
   centeredSlides: true,
 
 });
+const swiperPrices = new Swiper('.prices-container', {
+
+  pagination: {
+    el: '.swiper-pagination-prices',
+    type: 'bullets',
+    clickable: true,
+  },
+  spaceBetween: 16,
+  slidesPerView: 1.15,
+  centeredSlides: true,
+
+});
 
 
 // Кнока Показать все у текста в статье
