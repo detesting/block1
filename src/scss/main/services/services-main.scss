@@ -1,0 +1,54 @@
+.services-main {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 176px;
+  overflow: hidden;
+  min-width: 0;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  &__service{
+    background: $bgWhite;
+    border: 1px solid $btnBorderHead;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+    width: 240px;
+    height: 160px;
+    margin: 8px 0 8px 16px;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: 767px) {
+      margin-left: 24px;
+      width: 224px;
+    }
+    @media (min-width: 1119px) {
+      margin-left: 32px;
+      width: 240px;
+    }
+  }
+
+  &__text{
+    padding: 16px 0 0 16px;
+    font-family: "TT Lakes", serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: -0.2px;
+
+    color: $clrText;
+  }
+  &__link{
+    padding-top: 104px;
+    padding-right: 16px;
+  }
+
+  &--show{
+    max-height: 100%;
+    overflow: visible;
+  }
+}

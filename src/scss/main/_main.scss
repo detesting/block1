@@ -3,15 +3,12 @@
   width: 100%;
 }
 
+@import "../swiper-bundle";
 @import "./title";
 @import "./slidemenu";
 
-@import "./blog";
-@import "./blog-more";
+@import "./blog/blog";
 
-@import "./brands";
-@import "./brands-header";
-@import "./brands-main";
-@import "./brands-more";
-@import "./brands-hide";
-@import "./brands-swiper";
+@import "./brands/brands";
+
+@import "./services/services";

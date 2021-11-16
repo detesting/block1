@@ -1,0 +1,57 @@
+
+.brands {
+  .swiper-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 767px) {
+      display: none;
+    }
+
+    .swiper-wrapper {
+      display: flex;
+
+      .swiper-slide {
+        background: $bgWhite;
+        border: 1px solid $btnBorderHead;
+        border-radius: 6px;
+
+        min-width: 240px;
+        height: 100%;
+        padding-left: 16px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    //position: relative;
+    //top: 50px;
+    position: relative;
+    //display: inline-block;
+    top: 15px;
+    margin-bottom: 40px;
+
+
+    @media (min-width: 767px) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background: $bgSwiper !important;
+    height: 12px !important;
+    width: 12px !important;
+    opacity: 1 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $bgActiveSwiper !important;
+    height: 12px !important;
+    width: 12px !important;
+    opacity: 1 !important;
+  }
+}

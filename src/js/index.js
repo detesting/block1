@@ -1,9 +1,10 @@
 import '../scss/style.scss';
 
-const swiper = new Swiper('.swiper-container', {
+// Свайперы
+const swiperBrands = new Swiper('.brands-container', {
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination-brands',
     type: 'bullets',
     clickable: true,
   },
@@ -12,6 +13,19 @@ const swiper = new Swiper('.swiper-container', {
   centeredSlides: true,
 
 });
+const swiperServices = new Swiper('.services-container', {
+
+  pagination: {
+    el: '.swiper-pagination-services',
+    type: 'bullets',
+    clickable: true,
+  },
+  spaceBetween: 16,
+  slidesPerView: 1.15,
+  centeredSlides: true,
+
+});
+
 
 // Кнока Показать все у текста в статье
 var buttonShowAllText = document.querySelector('.blog-more');
@@ -26,18 +40,35 @@ buttonShowAllText.addEventListener('click', function (event) {
 })
 
 // Показать все/Скрыть у брендов
-var buttonShowAllButtons = document.querySelector('.brands-more');
-var buttonHideAllButtons = document.querySelector('.brands-hide');
+var buttonShowAllBrends = document.querySelector('.brands-more');
+var buttonHideAllBrends = document.querySelector('.brands-hide');
 var brands = document.querySelector('.brands-main');
 
 
-buttonShowAllButtons.addEventListener('click', function (event) {
-  buttonShowAllButtons.classList.add('brands-more--state--active');
-  buttonHideAllButtons.classList.remove('brands-hide--state--active');
+buttonShowAllBrends.addEventListener('click', function (event) {
+  buttonShowAllBrends.classList.add('brands-more--state--active');
+  buttonHideAllBrends.classList.remove('brands-hide--state--active');
   brands.classList.add('brands-main--show')
 })
-buttonHideAllButtons.addEventListener('click', function (event) {
-  buttonHideAllButtons.classList.add('brands-hide--state--active');
-  buttonShowAllButtons.classList.remove('brands-more--state--active');
+buttonHideAllBrends.addEventListener('click', function (event) {
+  buttonHideAllBrends.classList.add('brands-hide--state--active');
+  buttonShowAllBrends.classList.remove('brands-more--state--active');
   brands.classList.remove('brands-main--show');
+})
+
+// Показать все/Скрыть у услуг
+var buttonShowAllServices = document.querySelector('.services-more');
+var buttonHideAllServices = document.querySelector('.services-hide');
+var services = document.querySelector('.services-main');
+
+
+buttonShowAllServices.addEventListener('click', function (event) {
+  buttonShowAllServices.classList.add('services-more--state--active');
+  buttonHideAllServices.classList.remove('services-hide--state--active');
+  services.classList.add('services-main--show')
+})
+buttonHideAllServices.addEventListener('click', function (event) {
+  buttonHideAllServices.classList.add('services-hide--state--active');
+  buttonShowAllServices.classList.remove('services-more--state--active');
+  services.classList.remove('services-main--show');
 })

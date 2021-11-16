@@ -1,0 +1,21 @@
+.services-header{
+  background: linear-gradient(270deg, $bgWhite 0%, $bgBody 98.61%);
+  margin-top: 24px;
+  @media (min-width: 767px){
+    margin-top: 32px;
+  }
+  @media (min-width: 1119px){
+    margin-top: 50px;
+  }
+
+  &__text{
+    padding: 16px 16px;
+    margin-bottom: 24px;
+    @media (min-width: 767px){
+      padding: 16px 24px;
+    }
+    @media (min-width: 1119px){
+      padding: 16px 32px;
+    }
+  }
+}

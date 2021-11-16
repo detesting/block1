@@ -1,8 +1,8 @@
-.brands-more{
+.brands-hide{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
+  background-color: $bgBody;
   margin: 8px 8px 8px 16px;
 
   @media (min-width: 767px) {
@@ -11,15 +11,12 @@
   @media (min-width: 1119px) {
     margin-left: 32px;
   }
-  @media (max-width: 767px) {
-    display: none;
-  }
 
   &__text{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    color: $clrText;
+    color: #1B1C21;
   }
 
   &--state--active{
