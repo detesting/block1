@@ -14,24 +14,19 @@
   @media (min-width: 1120px){
     display: none;
   }
-}
 
-.header__left{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-grow: 1;
-  //padding-right: 8px;
-  //padding-left: 8px;
+  &__left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
-.header__right{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  //padding-right: 8px;
-  //padding-left: 8px;
-}
-
 
 @import './burger';
 @import './call';

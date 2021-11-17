@@ -12,6 +12,7 @@
     border-left: 4px solid $borderItem;
     padding-left: 16px;
     width: 100%;
+
     @media (min-width: 767px) {
       padding-left: 24px;
     }
@@ -51,5 +52,4 @@
       margin-right: 32px;
     }
   }
-
 }

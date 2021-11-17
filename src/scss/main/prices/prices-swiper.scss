@@ -8,11 +8,9 @@
       display: none;
     }
   }
-
   .swiper-wrapper {
     display: flex;
   }
-
   .swiper-slide {
     background: $bgWhite;
     border: 1px solid $btnBorderHead;
@@ -28,9 +26,7 @@
       font-family: "TT Lakes Regular", serif;
       font-size: 14px;
       line-height: 16px;
-
       color: $clrSlidemenu;
-
       mix-blend-mode: normal;
       opacity: 0.72;
       width: 100%;
@@ -41,10 +37,9 @@
       font-family: "TT Lakes Medium", serif;
       font-size: 14px;
       line-height: 18px;
-
       letter-spacing: 0.2px;
-
       color: $clrText;
+
       padding: 4px 16px 0 16px;
     }
     &__button{
@@ -65,11 +60,7 @@
 
       margin: 0 16px 16px 0;
     }
-    &__img{
-
-    }
   }
-
   .swiper-pagination {
     position: relative;
     top: 15px;
@@ -79,14 +70,12 @@
       display: none;
     }
   }
-
   .swiper-pagination-bullet {
     background: $bgSwiper !important;
     height: 12px !important;
     width: 12px !important;
     opacity: 1 !important;
   }
-
   .swiper-pagination-bullet-active {
     background: $bgActiveSwiper !important;
     height: 12px !important;

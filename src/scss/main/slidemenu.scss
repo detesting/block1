@@ -41,13 +41,6 @@
     background: inherit;
     flex-shrink: 0;
 
-    //@media (min-width: 767px) {
-    //  padding-left: 24px;
-    //}
-    //@media (min-width: 1119px) {
-    //  padding-left: 32px;
-    //}
-
     &:hover, &:focus{
       font-size: 16px;
       color: $clrSlidemenu;
@@ -58,7 +51,6 @@
       flex-shrink: 0;
     }
   }
-
   &__brand--state--active{
     font-size: 16px;
     color: $clrSlidemenu;
@@ -68,5 +60,4 @@
     background: #FFFFFF !important;
     flex-shrink: 0;
   }
-
 }
