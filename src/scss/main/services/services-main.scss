@@ -10,6 +10,7 @@
   }
 
   &__service{
+    font-family: "TT Lakes Medium", serif;
     background: $bgWhite;
     border: 1px solid $btnBorderHead;
     box-sizing: border-box;
@@ -34,7 +35,7 @@
 
   &__text{
     padding: 16px 0 0 16px;
-    font-family: "TT Lakes", serif;
+    font-family: "TT Lakes Regular", serif;
     font-size: 16px;
     line-height: 24px;
 

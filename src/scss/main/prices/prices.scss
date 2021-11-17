@@ -1,12 +1,12 @@
 .prices {
-  font-family: 'TT Lakes', serif;
+  font-family: 'TT Lakes Regular', serif;
   background: $bgBody;
   min-width: 0;
   max-width: 1121px;
   margin: 0 auto;
 
   &__bottom-text{
-    font-family: 'TT Lakes', serif;
+    font-family: 'TT Lakes Regular', serif;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
@@ -24,7 +24,7 @@
     }
   }
   &__link{
-    font-family: 'TT Lakes', serif;
+    font-family: 'TT Lakes Regular', serif;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;

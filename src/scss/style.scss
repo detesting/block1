@@ -29,7 +29,7 @@ $border: #D9FFF5;
 @font-face {
   font-family: 'TT Lakes Bold';
   src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -42,7 +42,7 @@ $border: #D9FFF5;
 
 .content{
   min-width: 320px;
-  font-family: 'TT Lakes', serif;
+  font-family: 'TT Lakes Regular', serif;
   background: $bgBody;
   max-width: 1120px;
   margin: auto;
@@ -50,7 +50,7 @@ $border: #D9FFF5;
 
 .button{
   background: $bgWhite;
-  font-family: 'TT Lakes', serif;
+  font-family: 'TT Lakes Regular', serif;
   font-size: 16px;
   line-height: 24px;
 }
