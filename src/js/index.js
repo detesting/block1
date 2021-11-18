@@ -42,14 +42,13 @@ const swiperPrices = new Swiper('.prices-container', {
 // Кнока Показать все у текста в статье
 let buttonShowAllText = document.querySelector('.blog-more');
 let text = document.querySelector('.blog__text');
-
-
 buttonShowAllText.addEventListener('click', function (event) {
   buttonShowAllText.classList.remove('blog-more')
   buttonShowAllText.classList.add('blog-more--state--active');
   // text.classList.remove('blog__text')
   text.classList.add('blog__text--state--active')
 })
+
 
 // Показать все/Скрыть у брендов
 let buttonShowAllBrends = document.querySelector('.brands-more');
@@ -66,6 +65,7 @@ buttonHideAllBrends.addEventListener('click', function (event) {
   buttonShowAllBrends.classList.remove('brands-more--state--active');
   brands.classList.remove('brands-main--show');
 })
+
 
 // Показать все/Скрыть у услуг
 let buttonShowAllServices = document.querySelector('.services-more');
@@ -84,7 +84,7 @@ buttonHideAllServices.addEventListener('click', function (event) {
 })
 
 
-// Открытие меню
+// Открытие/закрытие меню
 let buttonShowMenu = document.querySelector('.burger__button');
 let buttonHideMenu = document.querySelector('.cancel__button');
 let menu = document.querySelector('.main-menu');
@@ -110,3 +110,35 @@ helpBlock.addEventListener('click', function (event){
   helpBlock.classList.remove('help-block--state--active');
 })
 
+
+// Открытие/закрытие обратной связи
+let buttonChatHeader = document.querySelector('.chat__button');
+let buttonChatMenu = document.querySelector('.main-menu-footer__chat');
+let feedback = document.querySelector('.feedback');
+let buttonHideFeedback = document.querySelector('.feedback-header__cancel')
+let helpBlockFeedback = document.querySelector('.help-block-feedback')
+
+buttonChatHeader.addEventListener('click', function (event){
+  feedback.classList.add('feedback--state--active');
+  content.classList.add('content__general-blur');
+  menu.classList.add('main-menu-blur');
+  helpBlockFeedback.classList.add('help-block-feedback--state--active');
+})
+buttonChatMenu.addEventListener('click', function (event){
+  feedback.classList.add('feedback--state--active');
+  content.classList.add('content__general-blur');
+  menu.classList.add('main-menu-blur');
+  helpBlockFeedback.classList.add('help-block-feedback--state--active');
+})
+buttonHideFeedback.addEventListener('click', function (event){
+  feedback.classList.remove('feedback--state--active');
+  content.classList.remove('content__general-blur');
+  helpBlockFeedback.classList.remove('help-block-feedback--state--active');
+  menu.classList.remove('main-menu-blur');
+})
+helpBlockFeedback.addEventListener('click', function (event){
+  feedback.classList.remove('feedback--state--active');
+  content.classList.remove('content__general-blur');
+  helpBlockFeedback.classList.remove('help-block-feedback--state--active');
+  menu.classList.remove('main-menu-blur');
+})

@@ -1,0 +1,28 @@
+.feedback-header{
+  align-self: flex-start;
+  background: $bgWhite;
+
+  &__cancel{
+    padding: 24px 0 32px 16px;
+    @media (min-width: 1120px) {
+      display: none;
+    }
+  }
+  &__text{
+    border-left: 4px solid $borderItem;
+    padding-left: 12px;
+
+    font-family: "TT Lakes", serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    font-weight: 700;
+
+    color: $clrText;
+
+    @media (min-width: 1120px) {
+      padding-left: 32px;
+      margin-top: 32px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-.main-menu{
+.feedback{
   width: 320px;
   display: flex;
   font-family: 'TT Lakes Regular', serif;
@@ -8,8 +8,9 @@
   flex-direction: column;
   position: fixed;
   top: 0;
-  left: -320px;
+  right: -320px;
   transition: all 0.3s ease-in-out;
+  transform-origin: top right;
   transform: translateX(-320) scaleX(1);
 
   background: $bgWhite;
@@ -18,22 +19,11 @@
   color: $clrText;
   font-weight: 500;
 
-  @media (min-width: 1119px) {
-    left: auto;
-  }
-  @media (max-height: 770px) {
-    img:not(.logo__image) {
-      max-height: 5vh;
-    }
-    .logo__image{
-      max-height: 6vh;
-    }
-  }
-
   &--state--active{
     box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
 
-    left: 0;
+    right: 0;
+    transform-origin: top right;
     transition: all 0.3s ease-in-out;
     transform: translateX(0) scaleX(1);
 
@@ -49,13 +39,24 @@
     //left: auto;
     background: $bgWhite;
     z-index: 3;
+
+    @media (min-width: 1120px) {
+      width: 440px;
+    }
   }
-  &-blur{
-    filter: blur(10px) opacity(50%);
-    transition: all 0.3s ease-in-out;
+
+  .cancel-1120{
+    display: none;
+    @media (min-width: 1120px) {
+      display: block;
+      position: fixed;
+      top: 32px;
+      right: 512px;
+      background: none;
+    }
   }
 }
 
-@import "./main-menu-header";
-@import "./main-menu-main";
-@import "./main-menu-footer";
+@import "./feedback-header";
+@import "./feedback-main";
+@import "./feedback-form";
