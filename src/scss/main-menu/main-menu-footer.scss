@@ -1,0 +1,81 @@
+.main-menu-footer{
+  width: inherit;
+  align-self: flex-end;
+  background: $bgWhite;
+
+  &__email{
+    padding: 8px 8px 6px 24px;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    color: $clrText;
+    font-weight: 500;
+
+    @media (max-height: 770px) {
+      padding: 0 24px;
+      margin: 0;
+    }
+  }
+  &__number{
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    color: $clrText;
+    padding: 6px 8px 20px 24px;
+    font-weight: 800;
+
+    @media (max-height: 770px) {
+      padding: 0 24px;
+      margin: 0;
+    }
+  }
+  &__languages{
+    padding: 20px 3px 32px 4px;
+
+    @media (max-height: 770px) {
+      margin: 0;
+      padding: 0 4px;
+    }
+
+    button{
+      width: 24px;
+      height: 24px;
+
+      &:hover, &:focus{
+        color: $clrSlidemenu;
+      }
+    }
+  }
+
+  &__ul{
+    display: flex;
+    justify-content: flex-start;
+
+    li{
+      padding: 8px;
+    }
+  }
+  &__call{
+    margin-left: 16px;
+  }
+
+  &__ru{
+    margin-left: 20px;
+    &--state--active{
+      color: $clrSlidemenu;
+      margin-left: 20px;
+    }
+  }
+  &__en{
+
+    &--state--active{
+      color: $clrSlidemenu;
+      //margin-left: 20px;
+    }
+  }
+  &__ch{
+
+    &--state--active{
+      color: $clrSlidemenu;
+      //margin-left: 20px;
+    }
+  }
+}

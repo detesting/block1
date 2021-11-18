@@ -40,8 +40,8 @@ const swiperPrices = new Swiper('.prices-container', {
 
 
 // Кнока Показать все у текста в статье
-var buttonShowAllText = document.querySelector('.blog-more');
-var text = document.querySelector('.blog__text');
+let buttonShowAllText = document.querySelector('.blog-more');
+let text = document.querySelector('.blog__text');
 
 
 buttonShowAllText.addEventListener('click', function (event) {
@@ -52,10 +52,9 @@ buttonShowAllText.addEventListener('click', function (event) {
 })
 
 // Показать все/Скрыть у брендов
-var buttonShowAllBrends = document.querySelector('.brands-more');
-var buttonHideAllBrends = document.querySelector('.brands-hide');
-var brands = document.querySelector('.brands-main');
-
+let buttonShowAllBrends = document.querySelector('.brands-more');
+let buttonHideAllBrends = document.querySelector('.brands-hide');
+let brands = document.querySelector('.brands-main');
 
 buttonShowAllBrends.addEventListener('click', function (event) {
   buttonShowAllBrends.classList.add('brands-more--state--active');
@@ -69,10 +68,9 @@ buttonHideAllBrends.addEventListener('click', function (event) {
 })
 
 // Показать все/Скрыть у услуг
-var buttonShowAllServices = document.querySelector('.services-more');
-var buttonHideAllServices = document.querySelector('.services-hide');
-var services = document.querySelector('.services-main');
-
+let buttonShowAllServices = document.querySelector('.services-more');
+let buttonHideAllServices = document.querySelector('.services-hide');
+let services = document.querySelector('.services-main');
 
 buttonShowAllServices.addEventListener('click', function (event) {
   buttonShowAllServices.classList.add('services-more--state--active');
@@ -84,3 +82,31 @@ buttonHideAllServices.addEventListener('click', function (event) {
   buttonShowAllServices.classList.remove('services-more--state--active');
   services.classList.remove('services-main--show');
 })
+
+
+// Открытие меню
+let buttonShowMenu = document.querySelector('.burger__button');
+let buttonHideMenu = document.querySelector('.cancel__button');
+let menu = document.querySelector('.main-menu');
+let content = document.querySelector('.content__general')
+let helpBlock = document.querySelector('.help-block')
+
+buttonShowMenu.addEventListener('click', function (event){
+  menu.classList.remove('main-menu')
+  menu.classList.add('main-menu--state--active');
+  content.classList.add('content__general-blur');
+  helpBlock.classList.add('help-block--state--active');
+})
+buttonHideMenu.addEventListener('click', function (event){
+  menu.classList.remove('main-menu--state--active');
+  menu.classList.add('main-menu');
+  content.classList.remove('content__general-blur');
+  helpBlock.classList.remove('help-block--state--active');
+})
+helpBlock.addEventListener('click', function (event){
+  menu.classList.remove('main-menu--state--active');
+  menu.classList.add('main-menu');
+  content.classList.remove('content__general-blur');
+  helpBlock.classList.remove('help-block--state--active');
+})
+

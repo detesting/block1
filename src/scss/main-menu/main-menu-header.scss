@@ -1,0 +1,35 @@
+.main-menu-header{
+  align-self: flex-start;
+  background: $bgWhite;
+
+  &__ul{
+    display: flex;
+    justify-content: flex-start;
+    width: 320px;
+
+    .cancel{
+      padding: 23px 8px 25px 24px;
+
+      @media (max-height: 770px) {
+        padding-bottom: 1vh;
+      }
+    }
+    .logo{
+      padding-left: 8px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      flex-grow: 1;
+      @media (max-height: 770px) {
+        padding-bottom: 1vh;
+      }
+    }
+    .search{
+      padding-top: 23px;
+      padding-right: 24px;
+      padding-bottom: 25px;
+      @media (max-height: 770px) {
+        padding-bottom: 1vh;
+      }
+    }
+  }
+}

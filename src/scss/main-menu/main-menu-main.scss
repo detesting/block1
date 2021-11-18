@@ -1,0 +1,44 @@
+.main-menu-main{
+  width: inherit;
+  align-self: flex-start;
+  flex-grow: 1;
+
+  &__ul{
+    display: flex;
+    width: inherit;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    li{
+      width: 320px;
+
+      button{
+        padding-left: 20px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+        @media (max-height: 770px) {
+          padding: 1.5vh 20px;
+          margin: 0;
+          width: 320px;
+          text-align: left;
+        }
+
+        &:focus, &:hover{
+          border-left: 4px solid $borderItem;
+          transition-duration: 0.5s;
+          filter: opacity(80%);
+        }
+      }
+    }
+  }
+  &__item{
+
+    &--state--active{
+      color: $clrSlidemenu;
+      border-left: 4px solid $borderItem;
+    }
+  }
+}

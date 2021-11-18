@@ -1,0 +1,14 @@
+.help-block{
+  display: none;
+
+  &--state--active{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 320px;
+    top: 0;
+    z-index: 5;
+    opacity: 1;
+  }
+}

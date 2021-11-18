@@ -44,8 +44,19 @@ $border: #D9FFF5;
   min-width: 320px;
   font-family: 'TT Lakes Regular', serif;
   background: $bgBody;
-  max-width: 1120px;
+  max-width: 1440px;
   margin: auto;
+  &__general{
+    @media (min-width: 1120px) {
+      max-width: 1120px;
+      margin-left: 320px;
+    }
+
+    &-blur{
+      filter: blur(10px) opacity(50%);
+      transition: all 0.3s ease-in-out;
+    }
+  }
 }
 
 .button{
@@ -53,6 +64,11 @@ $border: #D9FFF5;
   font-family: 'TT Lakes Regular', serif;
   font-size: 16px;
   line-height: 24px;
+
+  &:hover{
+    transition-duration: 0.7s;
+    filter: opacity(80%);
+  }
 }
 
 button:hover, a:hover{
@@ -72,3 +88,7 @@ li {
 @import "./header/_header";
 @import "./main/_main";
 @import "./footer/_footer";
+
+@import "./main-menu/main-menu";
+
+@import "./help-block/help-block";
