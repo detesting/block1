@@ -45,14 +45,16 @@
     }
   }
 
-  .cancel-1120{
+  &__cancel-1120{
     display: none;
     @media (min-width: 1120px) {
-      display: block;
       position: fixed;
       top: 32px;
       right: 512px;
       background: none;
+      &--active{
+        display: block;
+      }
     }
   }
 }

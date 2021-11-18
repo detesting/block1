@@ -1,0 +1,18 @@
+.help-block-back-call{
+  display: none;
+
+  &--state--active{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    right: 320px;
+    top: 0;
+    z-index: 5;
+    opacity: 1;
+
+    @media (min-width: 1120px) {
+      right: 440px;
+    }
+  }
+}

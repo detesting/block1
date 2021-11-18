@@ -770,8 +770,7 @@
 
   <!--  ОБРАТНАЯ СВЯЗЬ  -->
   <div class="feedback">
-
-    <button class="cancel-1120 button">
+    <button class="feedback__cancel-1120 button">
       <img src="./img/main-menu/burgerESC.svg" alt="Закрыть">
     </button>
     <!--  Шапка обратной связи  -->
@@ -802,10 +801,37 @@
 
   <!--  Вспомогательный блок, чтобы закрывать модалки по нажатию на заблюренную область  -->
   <div class="help-block-feedback"></div>
-  <!--  ЗАКАЗАТЬ ЗВОНОК  -->
-  <div>
 
+  <!--  ЗАКАЗАТЬ ЗВОНОК  -->
+  <div class="back-call">
+    <button class="back-call__cancel-1120 button">
+      <img src="./img/main-menu/burgerESC.svg" alt="Закрыть">
+    </button>
+    <!--  Шапка звонка  -->
+    <div class="back-call-header">
+      <button class="back-call-header__cancel button">
+        <img src="./img/main-menu/burgerESC.svg" alt="Закрыть">
+      </button>
+      <p class="back-call-header__text">Заказать звонок</p>
+    </div>
+
+    <!--  Основная часть звонка  -->
+    <div class="back-call-main">
+      <form action="#" method="post" class="back-call-form">
+        <input type="tel" placeholder="Телефон" class="back-call-form__phone">
+        <p class="back-call-form__text">Нажимая “отправить”,
+          вы даете согласие на <a href="#" class="back-call-form__link">обработку персональных данных</a> и соглашаетесь
+          с нашей <a href="#" class="back-call-form__link">политикой конфиденциальности</a></p>
+        <button type="submit" class="back-call-form__submit">
+          ОТПРАВИТЬ
+          <img src="./img/main/goside.svg" alt="Перейти" class="back-call-form__img">
+        </button>
+      </form>
+    </div>
   </div>
+
+  <!--  Вспомогательный блок, чтобы закрывать модалки по нажатию на заблюренную область  -->
+  <div class="help-block-back-call"></div>
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </body>

@@ -92,14 +92,13 @@ let content = document.querySelector('.content__general')
 let helpBlock = document.querySelector('.help-block')
 
 buttonShowMenu.addEventListener('click', function (event){
-  menu.classList.remove('main-menu')
+  menu.classList.remove('main-menu-blur');
   menu.classList.add('main-menu--state--active');
   content.classList.add('content__general-blur');
   helpBlock.classList.add('help-block--state--active');
 })
 buttonHideMenu.addEventListener('click', function (event){
   menu.classList.remove('main-menu--state--active');
-  menu.classList.add('main-menu');
   content.classList.remove('content__general-blur');
   helpBlock.classList.remove('help-block--state--active');
 })
@@ -112,33 +111,80 @@ helpBlock.addEventListener('click', function (event){
 
 
 // Открытие/закрытие обратной связи
-let buttonChatHeader = document.querySelector('.chat__button');
-let buttonChatMenu = document.querySelector('.main-menu-footer__chat');
+let buttonChatHeaderFeedback = document.querySelector('.chat__button');
+let buttonChatMenuFeedback = document.querySelector('.main-menu-footer__chat');
 let feedback = document.querySelector('.feedback');
-let buttonHideFeedback = document.querySelector('.feedback-header__cancel')
-let helpBlockFeedback = document.querySelector('.help-block-feedback')
+let buttonHideFeedback = document.querySelector('.feedback-header__cancel');
+let helpBlockFeedback = document.querySelector('.help-block-feedback');
+let cancelFeedback = document.querySelector('.feedback__cancel-1120')
 
-buttonChatHeader.addEventListener('click', function (event){
+buttonChatHeaderFeedback.addEventListener('click', function (event){
   feedback.classList.add('feedback--state--active');
   content.classList.add('content__general-blur');
   menu.classList.add('main-menu-blur');
   helpBlockFeedback.classList.add('help-block-feedback--state--active');
+  cancelFeedback.classList.add('feedback__cancel-1120--active')
 })
-buttonChatMenu.addEventListener('click', function (event){
+buttonChatMenuFeedback.addEventListener('click', function (event){
   feedback.classList.add('feedback--state--active');
   content.classList.add('content__general-blur');
   menu.classList.add('main-menu-blur');
   helpBlockFeedback.classList.add('help-block-feedback--state--active');
+  cancelFeedback.classList.add('feedback__cancel-1120--active');
+  menu.classList.remove('main-menu--state--active');
+  helpBlock.classList.remove('help-block--state--active');
 })
 buttonHideFeedback.addEventListener('click', function (event){
   feedback.classList.remove('feedback--state--active');
   content.classList.remove('content__general-blur');
   helpBlockFeedback.classList.remove('help-block-feedback--state--active');
   menu.classList.remove('main-menu-blur');
+  cancelFeedback.classList.remove('feedback__cancel-1120--active');
 })
 helpBlockFeedback.addEventListener('click', function (event){
   feedback.classList.remove('feedback--state--active');
   content.classList.remove('content__general-blur');
   helpBlockFeedback.classList.remove('help-block-feedback--state--active');
   menu.classList.remove('main-menu-blur');
+  cancelFeedback.classList.remove('feedback__cancel-1120--active');
+})
+
+
+// Открытие/закрытие обратного звонка
+let buttonChatHeaderBackCall = document.querySelector('.call__button');
+let buttonChatMenuBackCall = document.querySelector('.main-menu-footer__call');
+let backCall = document.querySelector('.back-call');
+let buttonHideBackCall = document.querySelector('.back-call-header__cancel');
+let helpBlockBackCall = document.querySelector('.help-block-back-call');
+let cancelBackCall = document.querySelector('.back-call__cancel-1120');
+
+buttonChatHeaderBackCall.addEventListener('click', function (event){
+  backCall.classList.add('back-call--state--active');
+  content.classList.add('content__general-blur');
+  menu.classList.add('main-menu-blur');
+  helpBlockBackCall.classList.add('help-block-back-call--state--active');
+  cancelBackCall.classList.add('back-call__cancel-1120--active');
+})
+buttonChatMenuBackCall.addEventListener('click', function (event){
+  backCall.classList.add('back-call--state--active');
+  content.classList.add('content__general-blur');
+  menu.classList.add('main-menu-blur');
+  helpBlockBackCall.classList.add('help-block-back-call--state--active');
+  cancelBackCall.classList.add('back-call__cancel-1120--active');
+  menu.classList.remove('main-menu--state--active');
+  helpBlock.classList.remove('help-block--state--active');
+})
+buttonHideBackCall.addEventListener('click', function (event){
+  backCall.classList.remove('back-call--state--active');
+  content.classList.remove('content__general-blur');
+  helpBlockBackCall.classList.remove('help-block-back-call--state--active');
+  menu.classList.remove('main-menu-blur');
+  cancelBackCall.classList.remove('back-call__cancel-1120--active');
+})
+helpBlockBackCall.addEventListener('click', function (event){
+  backCall.classList.remove('back-call--state--active');
+  content.classList.remove('content__general-blur');
+  helpBlockBackCall.classList.remove('help-block-back-call--state--active');
+  menu.classList.remove('main-menu-blur');
+  cancelBackCall.classList.remove('back-call__cancel-1120--active');
 })
