@@ -36,9 +36,8 @@
     flex-direction: column;
     position: fixed;
     top: 0;
-    //left: auto;
     background: $bgWhite;
-    z-index: 3;
+    z-index: 10;
 
     @media (min-width: 1120px) {
       width: 440px;
@@ -54,6 +53,8 @@
       background: none;
       &--active{
         display: block;
+        cursor: pointer;
+        z-index: 10;
       }
     }
   }

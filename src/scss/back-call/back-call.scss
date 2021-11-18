@@ -37,7 +37,7 @@
     position: fixed;
     top: 0;
     background: $bgWhite;
-    z-index: 3;
+    z-index: 10;
 
     @media (min-width: 1120px) {
       width: 440px;

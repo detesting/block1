@@ -7,6 +7,9 @@
     @media (min-width: 1120px) {
       display: none;
     }
+    @media (max-height: 676px) {
+      padding: 10px 0 10px 16px;
+    }
   }
   &__text{
     border-left: 4px solid $borderItem;
@@ -24,5 +27,6 @@
       padding-left: 32px;
       margin-top: 32px;
     }
+
   }
 }
