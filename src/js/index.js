@@ -39,14 +39,19 @@ const swiperPrices = new Swiper('.prices-container', {
 });
 
 
-// Кнока Показать все у текста в статье
+// Кнокки Показать все/Скрыть у текста в статье
 let buttonShowAllText = document.querySelector('.blog-more');
 let text = document.querySelector('.blog__text');
+let buttonHideAllText = document.querySelector('.blog-hide')
 buttonShowAllText.addEventListener('click', function (event) {
-  buttonShowAllText.classList.remove('blog-more')
   buttonShowAllText.classList.add('blog-more--state--active');
-  // text.classList.remove('blog__text')
   text.classList.add('blog__text--state--active')
+  buttonHideAllText.classList.remove('blog-hide--state--active');
+})
+buttonHideAllText.addEventListener('click', function (event) {
+  buttonHideAllText.classList.add('blog-hide--state--active');
+  text.classList.remove('blog__text--state--active')
+  buttonShowAllText.classList.remove('blog-more--state--active');
 })
 
 
