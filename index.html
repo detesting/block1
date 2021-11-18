@@ -768,10 +768,35 @@
   <div class="help-block"></div>
 
   
-  <div>
+  <div class="feedback">
+    
+    <div class="feedback-header">
+      <button class="feedback-header__cancel button">
+        <img src="./img/main-menu/burgerESC.svg" alt="Закрыть">
+      </button>
+      <p class="feedback-header__text">Обратная связь</p>
+    </div>
 
+    
+    <div class="feedback-main">
+      <form action="#" method="post" class="feedback-form">
+        <input type="text" placeholder="Имя" class="feedback-form__name">
+        <input type="tel" placeholder="Телефон" class="feedback-form__phone">
+        <input type="email" placeholder="Электронная почта" class="feedback-form__email">
+        <textarea placeholder="Сообщение" class="feedback-form__message" rows="10"></textarea>
+        <p class="feedback-form__text">Нажимая “отправить”,
+          вы даете согласие на <a href="#" class="feedback-form__link">обработку персональных данных</a> и соглашаетесь
+          с нашей <a href="#" class="feedback-form__link">политикой конфиденциальности</a></p>
+        <button type="submit" class="feedback-form__submit">
+          ОТПРАВИТЬ
+          <img src="./img/main/goside.svg" alt="Перейти" class="feedback-form__img">
+        </button>
+      </form>
+    </div>
   </div>
 
+  
+  <div class="help-block-feedback"></div>
   
   <div>
 
